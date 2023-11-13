@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-6 text-center"> Django App</h1>
+        <p> Basic web project for a CRUD (Create, Read, Update, Delete) task management system using Django. This project will involve creating a web application where users can manage their tasks.</p>
+
+        <div class="text-center">
+            <a class="btn btn-secondary" href="/signin/">
+                Sign In
+            </a>
+            <a class="btn btn-dark" href="/signup/">
+                Sign Up
+            </a>
+        </div>
+        
+    </section>
+</main>
+
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-6 text-center"> Key Features</h1>
+        <div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <h4>User Authentication</h4>
+                    <p>Users must be able to sign up, log in, and log out. Only authenticated users will be able to manage their tasks.</p>
+                </li>
+                <li class="nav-item">
+                    <h4>Task Listing</h4>
+                    <p>Users should see a list of their tasks on the homepage. Each task should display key information such as title, status, and due date.</p>
+                </li>
+                <li class="nav-item">
+                    <h4>Task Creation</h4>
+                    <p>Authenticated users can create new tasks by providing a title, description, status, and due date. The default status can be "To Do</p>
+                </li>
+                <li class="nav-item">
+                    <h4>Task Details</h4>
+                    <p>Clicking on a task should take the user to a detailed view where they can see the full information about the task</p>
+                </li>
+                <li class="nav-item">
+                    <h4>Task Update</h4>
+                    <p>Users should be able to edit and update the details of a task, including modifying the title, description, status, and due date</p>
+                </li>
+                <li class="nav-item">
+                    <h4>Task Deletion</h4>
+                    <p>Users should have the option to delete a task.</p>
+                </li>
+                
+            </ul>
+        </div>
+        
+        
+    </section>
+</main>
+
+
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-6 text-center"> Technology Stack</h1>
+        <div>
+            <ul class="navbar-nav ms-auto">
+                <div>
+                <li class="nav-item">
+                    <h4>Django</h4>
+                    <p>Backend framework for handling data models, views, and controllers.</p>
+                </li>
+                <li class="nav-item">
+                    <h4>Django ORM (Object-Relational Mapping)</h4>
+                    <p>For interacting with the database.</p>
+                </li>
+                <li class="nav-item">
+                    <h4>HTML/CSS</h4>
+                    <p>Frontend development for creating a user-friendly interface.</p>
+                </li>
+                <li class="nav-item">
+                    <h4>Bootstrap</h4>
+                    <p>Frontend framework for responsive and attractive design.</p>
+                </li>
+                <li class="nav-item">
+                    <h4>SQLite</h4>
+                    <p>Database for storing task information.</p>
+                </li>
+                <li class="nav-item">
+                    <h4>Django Forms</h4>
+                    <p>To handle form creation and validation.</p>
+                </li>
+                
+            </ul>
+        </div>
+       
+    </section>
+</main>
+
+
+{% endblock %}
